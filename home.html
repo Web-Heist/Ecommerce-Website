@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Creepster&family=Skranji&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./product-list.css">
+
+    <script src="./main.js"></script>
+    <title>Ecommerce-Home</title>
+</head>
+<body>
+    <div>
+        
+        <header class="header">
+           
+            <div class="logo">
+              <a href="./home.html">
+                <img src="./public/logo-colored.svg"  alt=""></a>
+            </div>
+        
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Search">
+                <div class="dropdown-container">
+                    <select class="dropdown">
+                        <option href="#">All category</option>
+                        <option href="#">Category 1</option>
+                        <option href="#">Category 2</option>
+                    </select>
+                </div>
+                <button class="search-button">Search</button>
+            </div>
+
+            <div class="icons">
+                <a href="#user"><div class="icon">
+                    <i class="fa fa-user"></i></a> 
+                    <p>Profile</p>
+                </div>
+                <div class="icon">
+                  <a href="#req">  <i class="fa fa-envelope"></i></a> 
+                    <p>Message</p>
+                </div>
+                <div class="icon">
+                  <a href="./product-list.html">    <i class="fa fa-heart"></i></a> 
+                    <p>Orders</p>
+                </div>
+                <div class="icon">
+                  <a href="">   <i class="fa fa-shopping-cart"></i></a> 
+                    <p>Cart</p>
+                </div>
+            </div>
+        </header>
+
+        <nav  class="nav_bar" id="user">
+          <a class="nav_item" onclick="catagorybar()"> <i class="fa fa-list"></i> All catagory</a> 
+          <a class="nav_item" href="#offers">Hot offers</a> 
+          <a class="nav_item" href="./product-list.html">Product list</a> 
+          <a class="nav_item" href="./product-details.html">Product details</a> 
+            <a class="nav_item" href="#">Gift boxes</a> 
+            <a class="nav_item">
+            <select class="dropdown" style="border-color:white;">
+                <option href="#">Help</option>
+                <option href="#">Resources</option>
+                <option href="#">Support</option>
+            </select>
+          </a>
+        <a class="nav_item2 ">  
+            <select class="dropdown" style="border-color:white;">
+            <option  href="#">English,USD</option>
+            <option href="#">Urdu</option>
+            <option href="#">German</option>
+            <option href="#">Italian</option>
+        </select> 
+    </a>
+    <a class="nav_item"> Ship to <img src="./public/flags/germany.png" width="30rem" alt="">
+  <select class="dropdown" style="border-color:white; font-size:0.9rem; width:3rem;">
+     <option > </option>
+    <option value="US">&#127466;&#127480; </option>
+    <option value="AU">&#127462;&#127482; </option>
+    <option value="CN">&#127462;&#127475; </option>
+        </select> 
+ </a>  
+</nav>
+
+
+<div class="section_main">
+       <div class="main_menu">
+      <a  href="#"> <li style="color:rgb(8, 8, 8); background-color:rgb(222, 247, 250);">Automobiles</li></a>
+    <a href="./product-details.html"><li >Clothes and wear</li></a>
+    <a  href="#"> <li>Home interior</li></a>
+     <a href="./product-list.html">  <li >Computer and tech</li></a>
+     <a  href="./product-list.html"> <li>Tools, equipment</li></a>
+     <a href="#">  <li>Sports and outdoor</li></a>
+     <a href="#">  <li>Animal and pets</li></a>
+     <a href="#"> <li>Machinery tools </li></a>
+     <a href="#">  <li>More catagory</li></a>
+</div> 
+<div>
+<img src="./public/main11.png" alt=""><h2>Latest trending<br><b>Electronic items</b></h2>
+<button class="learn-btn" href="#">Learn  more </button>
+</div>
+       <div class="tags">
+       <div class="user">
+        <div> 
+         <i class="fa fa-user-circle" ></i>
+        <h3>Hi, user<br>let's get started</h3>
+        </div>
+       <button class="join-btn" href="#" >Join now</button>
+       <button class="login-btn" href="#" >Log in</button>
+       <div class="slide1">
+        Get US $10 off<br> with a new <br> supplier
+       </div>
+       <div class="slide2"> 
+        Send quotes with<br> supplier<br> preferences
+       </div>
+       </div>
+    </div>
+</div>
+
+
+<div class="deals-section">
+
+  <div class="deals">
+      <h2>Deals and offers</h2>
+      <p>Hygiene equipments</p>
+      <div class="time">
+     <p>07<br><span>Days</span></p>
+     <p>13<br><span>Hour</span></p>
+     <p>36<br><span>Min</span></p>
+     <p>20<br><span>Sec</span></p>
+      </div>
+
+      </div>
+
+<div class="deal-slideC">
+
+    <div class="deal-slides">
+      <div class="card">
+          <a href="./product-list.html"> <img src="./public/tech/8.jpg" class="c-img" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Smart watches</h5>
+             <p class="card-text">-25%</p>
+           </div></a>
+          </div>
+    </div>
+
+    <div class="deal-slides">
+      <div class="card">
+          <a href="./product-list.html"> <img src="./public/tech/7.jpg" class="c-img" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Laptops</h5>
+             <p class="card-text">-25%</p>
+           </div></a>
+          </div>
+    </div>
+
+    <div class="deal-slides">
+      <div class="card">
+          <a href="./product-list.html"> <img src="./public/tech/6.jpg" class="c-img" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">GoPro Camera</h5>
+             <p class="card-text">-25%</p>
+           </div></a>
+          </div>
+    </div>
+
+    <div class="deal-slides">
+      <div class="card">
+          <a href="./product-list.html"> <img src="./public/tech/5.jpg" class="c-img" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Headphones</h5>
+             <p class="card-text">-25%</p>
+           </div></a>
+          </div>
+    </div>
+
+    <div class="deal-slides" style="border-top-left-radius:0.5rem; border-bottom-left-radius:0.5rem;">
+      <div class="card">
+          <a href="./product-list.html"> <img src="./public/tech/1.jpg" class="c-img" alt="...">
+           <div class="card-body">
+             <h5 class="card-title">Smart phones</h5>
+             <p class="card-text">-25%</p>
+           </div></a>
+          </div>
+    </div>
+
+</div>
+</div>
+
+
+  <div class="outdoor_container">
+
+    <div class="outdoor">
+        <img src="./public/image92.png" alt=""><h2>Home and<br>outdoor</h2>
+        <button class="source-btn" href="#">Source nows </button>
+        </div>
+
+<div class="outdoor-slideC">
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/interior/4.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Flask</h5>
+               <p class="card-text">From USD 19</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/interior/5.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Mattress</h5>
+               <p class="card-text">From USD 25</p>
+             </div></a>
+           </div>
+      </div>
+
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/interior/6.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Lamp</h5>
+               <p class="card-text">From USD 20</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/interior/8.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Home appliance</h5>
+               <p class="card-text">From USD 30</p>
+             </div></a>
+           </div>
+      </div>
+
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/interior/7.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Home appliance</h5>
+               <p class="card-text">From USD 35</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/interior/5.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Mattress</h5>
+               <p class="card-text">From USD 30</p>
+             </div></a>
+           </div>
+      </div>
+
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/interior/9.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Appliance</h5>
+               <p class="card-text">From USD 25</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/interior/1.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Soft chairs</h5>
+               <p class="card-text">From USD 20</p>
+             </div></a>
+           </div>
+      </div>
+
+</div>
+  </div>
+
+  <div class="outdoor_container">
+
+    <div class="outdoor">
+        <img src="./public/image98.png" alt=""><h2>Consumer<br>electronics and<br>gadgets</h2>
+        <button class="source-btn" href="#">Source nows </button>
+        </div>
+
+<div class="outdoor-slideC">
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/tech/1.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">SmartPhones</h5>
+               <p class="card-text">From USD 25</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/tech/10.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Electric kattele</h5>
+               <p class="card-text">From USD 30</p>
+             </div></a>
+           </div>
+      </div>
+
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/tech/2.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">SmartPhones</h5>
+               <p class="card-text">From USD 10</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/tech/5.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Head Phones</h5>
+               <p class="card-text">From USD 19</p>
+             </div></a>
+           </div>
+      </div>
+
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/tech/7.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Laptops</h5>
+               <p class="card-text">From USD 40</p>
+             </div></a>
+            </div>
+           <div class="card">
+            <a href="#"> <img src="./public/tech/8.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Smart watches</h5>
+               <p class="card-text">From USD 20</p>
+             </div></a>
+           </div>
+      </div>
+
+      <div class="outdoor-slides">
+
+        <div class="card">
+            <a href="#"> <img src="./public/tech/6.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">Camera</h5>
+               <p class="card-text">From USD 19</p>
+             </div></a>
+            </div>
+           <div class="card" id="req">
+            <a href="#"> <img src="./public/tech/4.jpg" class="c-img" alt="...">
+             <div class="card-body">
+               <h5 class="card-title">SmartPhones</h5>
+               <p class="card-text">From USD 25</p>
+             </div></a>
+           </div>
+      </div>
+
+</div>
+  </div>
+
+
+
+    <div class="supp-req" >
+        <div><img src="./public/image102.png" alt="">
+        </div>
+        <div class="head">
+        <h1>An easy way to send<br> requests to all suppliers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>elit, sed do eiusmod tempor incididunt.</p>
+    </div>
+       
+    <div class="form-container">
+        <div class="form-group">
+            <label class="heading2">Send quote to suppliers</label>
+        </div>
+        <div class="form-group">
+            <label class="question">What items you need?</label>
+        </div>
+        <div class="form-group">
+            <textarea id="details" name="details" placeholder="Type more details"></textarea>
+        </div>
+
+        <div class="form-group">
+            <div class="select">
+                <label class="quantity">Quantity</label>
+                <select class="dropdown" style="border:0.09rem solid rgb(209, 209, 209); margin-left:0.5rem; width:7rem; height:2.2rem;">
+                    <option href="#">Pcs</option>
+                    <option href="#">1</option>
+                    <option href="#">3</option>
+                    <option href="#">5</option>
+                </select>
+           </div>
+          </div>
+        <div class="form-group">
+            <button type="submit">Send inquiry</button>
+        </div>
+    </div>
+
+    </div>
+
+    <h2 class="heading1">Recommended items</h2>
+
+   <div class="section-recommended">
+
+    <div class="card">
+       <a href="#"> <img src="./public/cloth/1.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">$10.30</h5>
+          <p class="card-text">Blue high quality T-Shirt</p>
+        </div>
+      </div>
+
+
+       <div class="card" >
+       <a href="#"> <img src="./public/tech/4.jpg" class="card-img-top" alt="..."> </a>
+        <div class="card-body">
+          <h5 class="card-title">$10.20</h5>
+          <p class="card-text">Smartphone in low prices</p>
+        </div>
+      </div>
+
+
+       <div class="card" >
+       <a href="#"> <img src="./public/cloth/3.jpg" class="card-img-top" alt="..."> </a>
+        <div class="card-body">
+          <h5 class="card-title">$20.30</h5>
+          <p class="card-text">Brown jacket for winters</p>
+        </div>
+      </div>
+
+
+       <div class="card">
+       <a href="#"> <img src="./public/interior/2.jpg" class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title">$30.10</h5>
+          <p class="card-text">Comfortable and premium quality chair </p>
+        </div>
+      </div>
+
+     
+       <div class="card">
+       <a href="#"> <img src="./public/cloth/6.jpg" class="card-img-top" alt="..."> </a>
+        <div class="card-body">
+          <h5 class="card-title">$5.10</h5>
+          <p class="card-text">Blue wallet for men</p>
+        </div>
+      </div>
+
+       <div class="card" >
+       <a href="#"> <img src="./public/interior/6.jpg" class="card-img-top" alt="..."> </a>
+        <div class="card-body"> 
+          <h5 class="card-title">$20.30</h5>
+          <p class="card-text">Low price lamp</p>
+        </div>
+      </div>
+
+
+      <div class="card">
+       <a href="#"> <img src="./public/tech/5.jpg" class="card-img-top" alt="..."> </a>
+        <div class="card-body">
+          <h5 class="card-title">$20.20</h5>
+          <p class="card-text">Expensive blue headphones</p>
+        </div>
+      </div>
+
+       <div class="card">
+       <a href="#"> <img src="./public/cloth/5.jpg" class="card-img-top" alt="..."> </a>
+        <div class="card-body">
+          <h5 class="card-title">$20.10</h5>
+          <p class="card-text">High quality blue bag</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <a href="#"> <img src="./public/cloth/7.jpg" class="card-img-top" alt="..."> </a>
+         <div class="card-body">
+           <h5 class="card-title">$20.10</h5>
+           <p class="card-text">Premium suit for men</p>
+         </div>
+       </div>
+
+       <div class="card">
+        <a href="#"> <img src="./public/cloth/4.jpg" class="card-img-top" alt="..."> </a>
+         <div class="card-body">
+           <h5 class="card-title">$10.30</h5>
+           <p class="card-text">Original high quality blue jeans</p>
+         </div>
+       </div>
+</div>
+
+<div class="services">
+    <h2>Our extra services</h2>
+
+<div class="service-tag">
+
+     <div class="sr-tag">
+        <a href="#"> <img src="./public/image108.png" class="card-img-top" alt="..."></a>
+         <div class="card-body">
+           <p class="card-text">Source from<br> Industry Hubs </p>
+         </div>
+       </div>
+ 
+ 
+        <div class="sr-tag" >
+        <a href="#"> <img src="./public/image104.png" class="card-img-top" alt="..."> </a>
+         <div class="card-body">
+           <p class="card-text">Customize Your <br> Products</p>
+         </div>
+       </div>
+ 
+        <div class="sr-tag" >
+        <a href="#"> <img src="./public/image106.png" class="card-img-top" alt="..."> </a>
+         <div class="card-body">
+           <p class="card-text">Fast, reliable shipping<br> by ocean or air</p>
+         </div>
+        </div>
+
+        <div class="sr-tag" >
+            <a href="#"> <img src="./public/image107.png" class="card-img-top" alt="..."> </a>
+             <div class="card-body">
+
+               <p class="card-text">Product monitoring<br> and inspection</p>
+             </div>
+            </div>
+
+       </div>
+</div>
+
+<div class="Section-scale">
+    <img src="./public/Section-country.png" alt="">
+</div>
+
+<div class="news-letter">
+    <h2> <b> Subscribe on our newsletter </b></h2>
+    <p>Get daily news on upcomming offers from many supplier all over the world</p>
+    <div class="email-section">
+    <i class="fa fa-envelope"></i>
+    <input type="text" class="email-input" placeholder="Email">
+    <button class="email-btn">Subscribe</button>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="brand-icon">
+                    <img src="./public/logo-colored.svg" alt="">
+                </div>
+                <p>Best information about the company goes here but now lorem ipsum is</p>
+                <div class="social-icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>About</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Find Store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Partnership</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Find Store</li>
+                        <li>Categories</li>
+                        <li>Blogs</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Information</h3>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Money Refund</li>
+                        <li>Shipping</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>For users</h3>
+                    <ul>
+                        <li>Login</li>
+                        <li>Register</li>
+                        <li>Settings</li>
+                        <li>My Orders</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Get app</h3>
+                    <div class="app-buttons">
+                      <img class="img1" src="./public/apple.png" alt="">
+                      <img class="img2" src="./public\google.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Ecommerce.</p>
+            <div class="language-selector">
+                <img src=".\public\flags\usa.png" alt="">
+                <span>English</span>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+    </footer>
+ </div>
+
+</body>
+</html>
